@@ -1,0 +1,40 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for com.novocode.junit.JUnitFramework produced 1 initial tasks for 1 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(actorbintree.BinaryTreeSuite, sbt.ForkMain$AnnotatedFingerscan@76b56624, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mTest actorbintree.[33mBinaryTreeSuite[0m.[36minstruction example (5pts)[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest actorbintree.[33mBinaryTreeSuite[0m.[36minstruction example (5pts)[0m finished, took 0.031 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest actorbintree.[33mBinaryTreeSuite[0m.[36mproper inserts and lookups (5pts)[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest actorbintree.[33mBinaryTreeSuite[0m.[36mproper inserts and lookups (5pts)[0m finished, took 0.004 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest actorbintree.[33mBinaryTreeSuite[0m.[36mbehave identically to built-in set (includes GC) (40pts)[0m started[0m
+[0m[[0m[31merror[0m] [0m[0mTest actorbintree.[33mBinaryTreeSuite[0m.[31mbehave identically to built-in set (includes GC) (40pts)[0m failed: java.lang.[31mRuntimeException[0m: failure to receive confirmation 13/1000[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.AssertionError: assertion failed: timeout (4999448932 nanoseconds) during expectMsgClass waiting for interface actorbintree.BinaryTreeSet$OperationReply, took 5.037 sec[0m
+[0m[[0m[31merror[0m] [0m[0m    at scala.sys.package$.error(package.scala:27)[0m
+[0m[[0m[31merror[0m] [0m[0m    at actorbintree.BinaryTreeSuite.$anonfun$receiveN$2([35mBinaryTreeSuite.scala[0m:[33m23[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    at actorbintree.BinaryTreeSuite.$anonfun$receiveN$2$adapted([35mBinaryTreeSuite.scala[0m:[33m20[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    at scala.collection.immutable.Range.map(Range.scala:59)[0m
+[0m[[0m[31merror[0m] [0m[0m    at actorbintree.BinaryTreeSuite.$anonfun$receiveN$1([35mBinaryTreeSuite.scala[0m:[33m20[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)[0m
+[0m[[0m[31merror[0m] [0m[0m    at akka.testkit.TestKitBase.within(TestKit.scala:375)[0m
+[0m[[0m[31merror[0m] [0m[0m    at akka.testkit.TestKitBase.within$(TestKit.scala:363)[0m
+[0m[[0m[31merror[0m] [0m[0m    at akka.testkit.TestKit.within(TestKit.scala:928)[0m
+[0m[[0m[31merror[0m] [0m[0m    at akka.testkit.TestKitBase.within(TestKit.scala:390)[0m
+[0m[[0m[31merror[0m] [0m[0m    at akka.testkit.TestKitBase.within$(TestKit.scala:390)[0m
+[0m[[0m[31merror[0m] [0m[0m    at akka.testkit.TestKit.within(TestKit.scala:928)[0m
+[0m[[0m[31merror[0m] [0m[0m    at actorbintree.BinaryTreeSuite.receiveN([35mBinaryTreeSuite.scala[0m:[33m19[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    at actorbintree.BinaryTreeSuite.behave identically to built-in set (includes GC) (40pts)([35mBinaryTreeSuite.scala[0m:[33m124[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
+[0m[[0m[31merror[0m] [0m[0m    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0m    at java.lang.reflect.Method.invoke(Method.java:567)[0m
+[0m[[0m[31merror[0m] [0m[0m    ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest actorbintree.[33mBinaryTreeSuite[0m.[36mbehave identically to built-in set (includes GC) (40pts)[0m finished, took 5.04 sec[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mTest run finished: [0m[31m1 failed[0m[34m, [0m[34m0 ignored[0m[34m, 3 total, 5.721s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
+[0m[[0m[31merror[0m] [0m[0mFailed: Total 3, Failed 1, Errors 0, Passed 2[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	actorbintree.BinaryTreeSuite[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
